@@ -1,7 +1,9 @@
 import React from 'react';
-import {Text, View, Image, TextInput} from 'react-native';
+import {Text, View, Image, TextInput, TouchableOpacity} from 'react-native';
 import { style } from './style';
 import Logo from '../../assets/logo.png';
+import {MaterialIcons} from '@expo/vector-icons';
+import { themes } from '../../global/themes';
 
 export default function Login() {
     return (
@@ -17,17 +19,33 @@ export default function Login() {
             <View style={style.boxMid}>
                 <Text style={style.titleInput}>Endereço de e-mail</Text>
                 <View style= {style.inputBox}>
-                    <TextInput />
-                    <Text>Olá</Text>
+                    <TextInput 
+                        style={style.input}
+                    />
+                    <MaterialIcons 
+                        name='email'
+                        size={20}
+                        color={themes.colors.gray}
+                    />
                 </View>
                 <Text style={style.titleInput}>Senha</Text>
                 <View style= {style.inputBox}>
-                    <TextInput />
+                    <TextInput 
+                        style={style.input}
+                    />
+                    <MaterialIcons 
+                        name='remove-red-eye'
+                        size={20}
+                        color={themes.colors.gray}
+                    />
                 </View>
             </View>
             <View style={style.boxBottom}>
-                
+                <TouchableOpacity style={style.button}>
+                    <Text style={style.textButton}>Entrar</Text>
+                </TouchableOpacity>
             </View>
+            <Text style={style.textBottom}>Não tem conta? <Text style={{color: themes.colors.primary}}>Clique agora!</Text></Text>
         </View>
     )
 }
