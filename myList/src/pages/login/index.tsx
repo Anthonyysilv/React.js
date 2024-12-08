@@ -42,10 +42,10 @@ export default function Login() {
             </View>
             <View style={style.boxBottom}>
                 <TouchableOpacity style={style.button}>
-                    <Text style={style.textBottom}>Entrar</Text>
+                    <Text style={style.textButton}>Entrar</Text>
                 </TouchableOpacity>
             </View>
-            <Text style={style.textBottomCreate}>Não tem conta? <Text style={{color: themes.colors.primary}}>Clique agora!</Text></Text>
+            <Text style={style.textBottom}>Não tem conta? <Text style={{color: themes.colors.primary}}>Clique agora!</Text></Text>
         </View>
     )
 }

@@ -88,8 +88,9 @@ export const style = StyleSheet.create({
         fontSize:16,
         color:themes.colors.gray
     },
-    textBottomCreate:{
-        fontSize:16,
-        color:themes.colors.primary
-    }
+    textButton:{
+        fontSize: 16,
+        color: '#FFFF',
+        fontWeight: 'bold',
+    },
 })
