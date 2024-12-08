@@ -18,7 +18,7 @@ export default function Login() {
             </View>
             <View style={style.boxMid}>
                 <Text style={style.titleInput}>Endereço de e-mail</Text>
-                <View style= {style.inputBox}>
+                <View style= {style.boxInput}>
                     <TextInput 
                         style={style.input}
                     />
@@ -29,7 +29,7 @@ export default function Login() {
                     />
                 </View>
                 <Text style={style.titleInput}>Senha</Text>
-                <View style= {style.inputBox}>
+                <View style= {style.boxInput}>
                     <TextInput 
                         style={style.input}
                     />
@@ -42,10 +42,10 @@ export default function Login() {
             </View>
             <View style={style.boxBottom}>
                 <TouchableOpacity style={style.button}>
-                    <Text style={style.textButton}>Entrar</Text>
+                    <Text style={style.textBottom}>Entrar</Text>
                 </TouchableOpacity>
             </View>
-            <Text style={style.textBottom}>Não tem conta? <Text style={{color: themes.colors.primary}}>Clique agora!</Text></Text>
+            <Text style={style.textBottomCreate}>Não tem conta? <Text style={{color: themes.colors.primary}}>Clique agora!</Text></Text>
         </View>
     )
 }

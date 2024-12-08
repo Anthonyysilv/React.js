@@ -1,72 +1,73 @@
-import { Dimensions, StyleSheet } from "react-native";
-import { themes } from '../../global/themes';
+import { StyleSheet,Dimensions} from "react-native";
+import { themes } from "../../global/themes";
+
 
 export const style = StyleSheet.create({
-    //Container das divs
     container:{
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',//padding: 20,
+        flex:1,
+        alignItems:'center',
+        justifyContent:'center'
     },
-    //Div superior
     boxTop:{
-        height: Dimensions.get('window').height /3,
-        width: '100%',
-        backgroundColor: 'red',
-        alignItems: 'center',
+        height:Dimensions.get('window').height/3,
+        width:'100%',
+        // backgroundColor:'red',
+        alignItems:'center',
+        justifyContent:'center'
     },
-    //Div média
     boxMid:{
-        height: Dimensions.get('window').height /4,
-        width: '100%',
-        //backgroundColor: 'green',
-        paddingHorizontal: 17,
+        height:Dimensions.get('window').height/4,
+        // backgroundColor:'blue',
+        width:'100%',
+        paddingHorizontal:37,
     },
-    //Div inferir
     boxBottom:{
-        height: Dimensions.get('window').height /3,
-        width: '100%',
-        //backgroundColor: 'blue',
-        alignItems: 'center',
-        //justifyContent: 'center',
+        height:Dimensions.get('window').height/3,
+        // backgroundColor:'green',
+        width:'100%',
+        alignItems:'center',
+        justifyContent:'flex-start'
+        
     },
-    //Estilo da logo
-    logo: {
-        width: 80,
-        height: 80,
+    boxInput:{
+        width:'100%',
+        height:40,
+        borderWidth:1,
+        borderRadius:40,
+        borderColor:themes.colors.lightGray,
+        backgroundColor:themes.colors.bgScreen,
+        marginTop:10,
+        flexDirection:'row',
+        alignItems:'center',
+        paddingHorizontal:30
+    },
+    logo:{
+        width:80,
+        height:80,
+        marginTop:40
     },
     text:{
-        fontWeight: 'bold',
-        marginTop: 40,
-        fontSize: 18,
+        marginTop:35,
+        fontSize:18,
+        fontWeight:'bold'
     },
-    //Estilo dos textos
-    titleInput:{
-        marginLeft: 5,
-        color: themes.colors.gray, //Importando os padrões de cores do global/themes
-        marginTop: 20,
-    },
-    //Estilo dos input
-    inputBox:{
-        width: '100%',
-        height: 40,
-        borderWidth: 1,
-        borderRadius: 40,
-        marginTop: 10,
-        flexDirection: 'row',
-        alignItems: 'center',
-        paddingHorizontal: 5,
-        backgroundColor: themes.colors.lightGray,
-        borderColor: themes.colors.lightGray,
-    },
-    //Estilização mais especifica dos input
     input:{
-        height: '100%',
-        width: '90%',
-        borderRadius: 40,
-        paddingLeft: 5,
+        // backgroundColor:'red',
+        height:'100%',
+        width:'100%',
+        borderRadius:40,
+        // paddingHorizontal:20
     },
-    //Estilo do botão
+    boxIcon:{
+        width:50,
+        height:50,
+        backgroundColor:'red'
+    },
+    titleInput:{
+        marginLeft:5,
+        color:themes.colors.gray,
+        marginTop:20
+    },
     button:{
         width: 250,
         height: 50,
@@ -83,15 +84,12 @@ export const style = StyleSheet.create({
         shadowRadius: 4.65,
         elevation: 7,
     },
-    //Estilo do texto do botão
-    textButton:{
-        fontSize: 16,
-        color: '#FFFF',
-        fontWeight: 'bold',
-    },
-    //Estilo do texto de cadastro
     textBottom:{
-        fontSize: 16,
-        color: themes.colors.gray,
+        fontSize:16,
+        color:themes.colors.gray
     },
+    textBottomCreate:{
+        fontSize:16,
+        color:themes.colors.primary
+    }
 })
