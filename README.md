@@ -26,7 +26,7 @@ Antes de começar, você precisará ter instalado:
 
 1. **Clone o repositório:**
    ```bash
-   git clone [https://github.com/Anthonyysilv/React.js]
+   git clone https://github.com/Anthonyysilv/React.js
    cd seu-repositorio
    ```
 
